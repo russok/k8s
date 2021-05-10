@@ -1,0 +1,7 @@
+!.gitignore
+!.pylintrc
+*.
+/build/
+/dist/
+*.egg-info/*
+
