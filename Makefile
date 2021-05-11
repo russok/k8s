@@ -25,8 +25,6 @@ logs:
 #-----------------------
 
 .cluster: .server
-	# kind create cluster --config kind-multinode.yaml
-	# kind load docker-image node-server
 	bash kind-with-registry.sh
 	docker push $(image_name)
 	kubectl config use-context kind-kind
